@@ -151,8 +151,8 @@ public class GameView extends Application {
     public Label scoreLabel;
     public HBox lifeLabels2;
     public final int[] startGhostOne = {1, 1};
-    public final int[] startGhostTwo = {1, 25};
-    public final int[] startGhostThree = {13, 25};
+    public final int[] startGhostTwo = {1, 23};
+    public final int[] startGhostThree = {13, 23};
     public final int[] startGhostFour = {13, 1};
     public static KeyCode direction = KeyCode.RIGHT;
     public static KeyCode ghostOneDirection;
@@ -312,8 +312,8 @@ public class GameView extends Application {
             ghosts2.stop();
             gridPane.getChildren().remove(rectOfGhost2);
             startGhostTwo[0] = 1;
-            startGhostTwo[1] = 25;
-            gridPane.add(rectOfGhost2, 25, 1);
+            startGhostTwo[1] = 23;
+            gridPane.add(rectOfGhost2, 23, 1);
             rectanglesOfGhost2 = rectOfGhost2;
             ghosts2.setDelay(Duration.seconds(5));
             ghosts2.play();
@@ -323,8 +323,8 @@ public class GameView extends Application {
             ghosts3.stop();
             gridPane.getChildren().remove(rectOfGhost3);
             startGhostThree[0] = 13;
-            startGhostThree[1] = 25;
-            gridPane.add(rectOfGhost3, 25, 13);
+            startGhostThree[1] = 23;
+            gridPane.add(rectOfGhost3, 23, 13);
             rectanglesOfGhost3 = rectOfGhost3;
             ghosts3.setDelay(Duration.seconds(5));
             ghosts3.play();
@@ -347,9 +347,9 @@ public class GameView extends Application {
     public void gameBoard() {
         gridPane.getChildren().clear();
         allRectangles.clear();
-        char[][] maze = GameProgramController.getInstance().generateMaze(2 * 13 + 1, 2 * 7 + 1);
+        char[][] maze = GameProgramController.getInstance().generateMaze(2 * 12 + 1, 2 * 7 + 1);
         thisMap = maze;
-        for (int i = 0; i < 27; ++i) {
+        for (int i = 0; i < 25; ++i) {
             for (int j = 0; j < 15; ++j) {
                 Rectangle rectangle = new Rectangle();
                 rectangle.setHeight(48);
@@ -722,8 +722,8 @@ public class GameView extends Application {
     private void addRects() {
         gridPane.add(rect, 15, 7);
         gridPane.add(rectOfGhost1, 1, 1);
-        gridPane.add(rectOfGhost2, 25, 1);
-        gridPane.add(rectOfGhost3, 25, 13);
+        gridPane.add(rectOfGhost2, 23, 1);
+        gridPane.add(rectOfGhost3, 23, 13);
         gridPane.add(rectOfGhost4, 1, 13);
         rectanglesOfGhost1 = rectOfGhost1;
         rectanglesOfGhost2 = rectOfGhost2;
@@ -761,9 +761,9 @@ public class GameView extends Application {
             startGhostOne[0] = 1;
             startGhostOne[1] = 1;
             startGhostTwo[0] = 1;
-            startGhostTwo[1] = 25;
+            startGhostTwo[1] = 23;
             startGhostThree[0] = 13;
-            startGhostThree[1] = 25;
+            startGhostThree[1] = 23;
             startGhostFour[0] = 13;
             startGhostFour[1] = 1;
             gridPane.getChildren().remove(rect);
@@ -825,7 +825,7 @@ public class GameView extends Application {
 
     public void checkScore() {
         int counter = 0;
-        for (int i = 0; i < 27; ++i) {
+        for (int i = 0; i < 25; ++i) {
             for (int j = 0; j < 15; ++j) {
                 if (thisMap[i][j] == 'S') {
                     ++counter;
@@ -846,7 +846,7 @@ public class GameView extends Application {
     }
 
     public void fillScores() {
-        for (int i = 0; i < 27; ++i) {
+        for (int i = 0; i < 25; ++i) {
             for (int j = 0; j < 15; ++j) {
                 if (thisMap[i][j] == '0') {
                     thisMap[i][j] = 'S';
@@ -865,7 +865,7 @@ public class GameView extends Application {
     }
 
     public void checkBackground() {
-        for (int i = 0; i < 27; ++i) {
+        for (int i = 0; i < 25; ++i) {
             for (int j = 0; j < 15; ++j) {
                 if (thisMap[i][j] == '0') {
                     allRectangles.get(i * 15 + j).setWidth(48);

@@ -34,12 +34,12 @@ public class GameProgramController {
         road(maze, randomNumber1, randomNumber2, width, height);
         maze[13][7] = '0';
         maze[1][13] = '0';
-        maze[25][13] = '0';
-        maze[25][1] = '0';
+        maze[23][13] = '0';
+        maze[23][1] = '0';
         maze[1][1] = '0';
-        for (int j = 0; j < 210; ++j) {
+        for (int j = 0; j < 200; ++j) {
             Random random = new Random();
-            int randomNumberDelete1 = random.nextInt(26);
+            int randomNumberDelete1 = random.nextInt(24);
             int randomNumberDelete2 = random.nextInt(14);
             if (randomNumberDelete1 != 0 && randomNumberDelete2 != 0)
                 maze[randomNumberDelete1][randomNumberDelete2] = '0';
