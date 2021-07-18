@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="page" alignment="CENTER" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GameView">
+    <VBox fx:id="vBoxGameBoard" alignment="CENTER">
+        <HBox fx:id="hBoxButtons" prefHeight="42.0" prefWidth="655.0">
+            <HBox fx:id="hBoxScore" alignment="CENTER_LEFT">
+                <Label fx:id="scoreFixedLabel" text="Score:"/>
+                <Label fx:id="scoreLabel" text="0"/>
+            </HBox>
+            <Button fx:id="generateButton" onMouseClicked="#showGameBoard" text="Generate Map"/>
+            <Button fx:id="chooseButton" onMouseClicked="#map" text="Choose"/>
+            <Label fx:id="saveLabel" text=" "/>
+            <HBox fx:id="lifeLabels2" alignment="CENTER_RIGHT">
+                <Label fx:id="lifeFixedLabel2" text="Life:"/>
+                <Label fx:id="lifeLabel2" text="2"/>
+            </HBox>
+            <Button fx:id="pauseButton" onMouseClicked="#pauseGame" text="Pause" visible="false"/>
+            <Button fx:id="backButton" onMouseClicked="#back" text="Back" visible="false"/>
+            <Button fx:id="muteButton" onMouseClicked="#mute" text="Mute"/>
+        </HBox>
+        <GridPane fx:id="gridPane" alignment="CENTER">
+        </GridPane>
+        <VBox fx:id="vBoxGameOver" alignment="CENTER" maxHeight="0" minHeight="0" visible="false">
+            <Label fx:id="gameOverLabel" alignment="BASELINE_CENTER" text="Game Over"/>
+            <Label text=""/>
+            <HBox alignment="CENTER">
+                <Button fx:id="btnGameOverNewGame" onMouseClicked="#newGameGameOverFunction" text="New Game"/>
+                <Button fx:id="btnGameOverMainMenu" onMouseClicked="#mainMenuGameOverFunction" text="Main Menu"/>
+            </HBox>
+        </VBox>
+    </VBox>
+</GridPane>

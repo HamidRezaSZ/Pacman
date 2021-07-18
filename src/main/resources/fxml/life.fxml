@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="View.Life"
+          prefHeight="600.0" prefWidth="900.0">
+    <VBox alignment="CENTER">
+        <Button alignment="CENTER" fx:id="muteButton" text="Mute" onMouseClicked="#mute"/>
+    <VBox alignment="CENTER" fx:id="vBoxLife">
+        <HBox alignment="CENTER">
+            <Label fx:id="lifeFixedLabel" text="Life:"/>
+            <Label fx:id="lifeLabel" text="2"/>
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button fx:id="downButton" onMouseClicked="#decreaseLife" text="Decrease Life"/>
+            <Button fx:id="confirmButton" onMouseClicked="#confirm" text="Confirm"/>
+            <Button fx:id="upButton" onMouseClicked="#increaseLife" text="Increase Life"/>
+        </HBox>
+    </VBox>
+    </VBox>
+
+</GridPane>

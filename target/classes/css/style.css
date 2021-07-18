@@ -1,0 +1,193 @@
+#pageOne {
+    -fx-background-image: url('../images/eSq0Qj.jpeg');
+    -fx-background-size: cover;
+}
+
+#btnContinue Text, #btnExit Text, #btnNewGame Text, #btnScoreBoard Text, #btnNewGame Text,
+#btnContinue Text, #btnScoreBoard Text, #btnChangePassword Text, #btnDeleteUser Text {
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.8), 0, 0.0, 0, 1);
+}
+
+#life {
+    -fx-background-image: url('../images/Pac-Man-0.png');
+    -fx-background-size: cover;
+}
+
+#loginViewWindow {
+    -fx-background-image: url('../images/eSq0Qj.jpeg');
+    -fx-background-size: cover;
+}
+
+#btnNewGame, #btnContinue, #btnScoreBoard, #btnGust, #btnSignup, #btnLogin, #btnChangePassword, #btnDeleteUser,
+#btnChangePassword {
+    -fx-background-insets: 10px;
+    -fx-min-width: 230;
+    -fx-min-height: 80;
+    -fx-background-color: linear-gradient(#ffffff, #909090);
+    -fx-background-radius: 8, 7, 6;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 6, 6);
+    -fx-font-size: 16;
+}
+
+#btnBack, #btnExit {
+    -fx-background-insets: 10px;
+    -fx-min-width: 230;
+    -fx-min-height: 80;
+    -fx-background-color: linear-gradient(#a8f8e1, #4ad596);
+    -fx-background-radius: 8, 7, 6;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 6, 6);
+    -fx-font-size: 16;
+}
+
+#vBoxExit {
+    visibility: hidden;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-min-width: 550;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+#vBoxExit .label {
+    -fx-font-size: 22;
+    -fx-padding: 35;
+}
+
+#btnContinue:hover, #btnNewGame:hover, #btnScoreBoard:hover, #btnGust:hover,
+#btnSignup:hover, #btnLogin:hover, #btnSignupMenu:hover, #btnBackSignupMenu:hover,
+#btnLoginMenu:hover, #btnBackLoginMenu:hover, #btnChangePassword:hover, #btnDeleteUser:hover, #btnBack:hover,
+#btnExit:hover, #btnBackDeleteMenu:hover, #btnDeleteMenu:hover, #btnBackChangeMenu:hover, #btnChangeMenu:hover, #upButton:hover, #confirmButton:hover, #downButton:hover, #chooseButton:hover, #generateButton:hover, #saveMap:hover, #pauseButton:hover, #backButton:hover, #showScoreBoard:hover, #backScoreBoard:hover, #btnGameOverMainMenu:hover, #btnGameOverNewGame:hover {
+    -fx-background-color: linear-gradient(#fff691, #844700);
+}
+
+#btnNo {
+    -fx-background-color: linear-gradient(#f0ff35, #a9ff00),
+    radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
+    -fx-min-width: 150;
+    -fx-min-height: 70;
+    -fx-font-size: 16;
+}
+
+#btnNo:hover {
+    -fx-background-color: #e3fa00;
+}
+
+#btnYes {
+    -fx-background-color: linear-gradient(#ff7c35, #ff0000),
+    radial-gradient(center 50% -40%, radius 200%, #ee5236 45%, #c80000 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #530606;
+    -fx-min-width: 150;
+    -fx-min-height: 70;
+    -fx-font-size: 16;
+}
+
+#btnYes:hover {
+    -fx-background-color: #ff2600;
+}
+
+#vBoxLogin, #vBoxSignup, #vBoxDeleteAccount, #vBoxChange {
+    -fx-spacing: 5;
+    -fx-background-color: white, -fx-box-border, -fx-control-inner-background;
+    -fx-font-size: 17;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+#btnSignupMenu, #btnBackSignupMenu, #btnLoginMenu, #btnBackLoginMenu, #btnBackDeleteMenu, #btnDeleteMenu,
+#btnChangeMenu, #btnBackChangeMenu, #upButton, #confirmButton, #downButton, #chooseButton, #generateButton, #saveMap, #pauseButton, #backButton, #showScoreBoard, #backScoreBoard, #btnGameOverNewGame, #btnGameOverMainMenu {
+    -fx-background-insets: 10px;
+    -fx-min-width: 110;
+    -fx-min-height: 55;
+    -fx-font-size: 16;
+    -fx-background-color: linear-gradient(#909090, #ffffff);
+    -fx-background-radius: 8, 7, 6;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 6, 6);
+}
+
+#vBoxLife {
+    -fx-background-color: white;
+    -fx-min-height: 250;
+}
+
+#vBoxSignupErrors, #vBoxLoginErrors, #vBoxDeleteErrors, #vBoxChangeErrors {
+    visibility: hidden;
+    -fx-font-size: 21;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+#btnLoginOk, #btnSignupOk, #btnDeleteOk, #btnChangeOk, #btnGameOverOk {
+    -fx-background-color: linear-gradient(#f0ff35, #a9ff00),
+    radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
+    -fx-min-width: 130;
+    -fx-min-height: 65;
+    -fx-font-size: 16;
+}
+
+#btnLoginOk:hover, #btnSignupOk:hover, #btnDeleteOk:hover, #btnChangeOk:hover, #btnGameOverOk:hover {
+    -fx-background-color: #e3fa00;
+}
+
+#loginLabel, #signupLabel, #deleteAccountLabel, #changeLabel, #gameOverLabel {
+    -fx-font-weight: bold;
+}
+
+#spaceLabel1, #spaceLabel2, #spaceLabel3, #spaceLabel5 {
+    -fx-font-size: 23;
+}
+
+#lifeFixedLabel2, #lifeLabel2, #scoreFixedLabel, #scoreLabel, #lifeLabel, #lifeFixedLabel {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+#spaceLabel4, #spaceLabel6 {
+    -fx-font-size: 27;
+}
+
+#muteButton, #muteButton2 {
+    -fx-background-radius: 15, 15, 15, 15;
+    -fx-padding: 14;
+    -fx-border-radius: 15, 15, 15, 15;
+    -fx-background-color: White;
+    -fx-background-position: center;
+}
+
+#gridPane{
+    -fx-background-color: white;
+}
+
+#vBoxGameOver {
+    -fx-font-size: 21;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+#vBoxLifeChanger, #score {
+    -fx-font-size: 21;
+    -fx-min-height: 300;
+    -fx-min-width: 400;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+#gameViewScene {
+    -fx-background-image: url('../images/Pac-Man-0.png');
+    -fx-background-size: cover;
+}
